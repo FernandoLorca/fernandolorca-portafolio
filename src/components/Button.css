@@ -1,0 +1,9 @@
+.backgroundGradient {
+  background: linear-gradient(to bottom right, #f69e72, #e52458);
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+.backgroundGradient:hover {
+  opacity: 0.75;
+}

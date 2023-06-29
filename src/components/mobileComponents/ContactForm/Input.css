@@ -1,0 +1,11 @@
+.inputLabel {
+  transition: transform 0.3s ease-in-out;
+}
+
+.inputLabel.default {
+  transform: translateY(30px);
+}
+
+.inputLabel.move {
+  transform: translateY(0px);
+}

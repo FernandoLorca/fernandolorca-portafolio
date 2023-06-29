@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #2a417e, #140420);
+  background-repeat: no-repeat;
+  font-family: 'Titillium Web', sans-serif;
+  color: #d9dee2;
+}
+
+.horizontalBars {
+  height: 1px;
+}
+
+.bg01 {
+  background-image: url(/bg-01.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+}
+
+.bg02 {
+  background-image: url(/bg-02.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+}
