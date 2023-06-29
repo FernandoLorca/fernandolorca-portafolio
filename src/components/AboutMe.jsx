@@ -45,7 +45,7 @@ const AboutMe = () => {
           className="relative z-20 w-2/4 lg:w-56 lg:h-56"
         />
       </div>
-      <p className="md:text-lg md:leading-relaxed xl:w-3/4">
+      <p className="md:text-lg md:leading-relaxed">
         Soy diseñador gráfico; no obstante, a raíz de dinstitas circunstancias
         laborales, he incorporado la programación en mis tareas profesionales,
         permitiéndome añadir funcionalidad a las distintas ideas gráficas en las

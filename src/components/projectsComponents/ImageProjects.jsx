@@ -2,12 +2,11 @@ import PropTypes from 'prop-types';
 
 const ImageProjects = ({ src }) => {
   return (
-    <div className="w-full">
-      <img
-        src={src}
-        alt=""
-      />
-    </div>
+    <img
+      src={src}
+      alt=""
+      className="w-80"
+    />
   );
 };
 

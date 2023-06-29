@@ -16,7 +16,7 @@ const Habilities = () => {
       <div className="mt-5">
         <TitleSection text="Habilidades y tecnologías" />
       </div>
-      <div className="grid grid-cols-4 grid-rows-3 justify-items-center py-10 gap-5">
+      <div className="grid grid-cols-4 grid-rows-3 justify-items-center py-28 gap-5">
         <ImgComponent
           imgPath="/habilities-icons/1-html.svg"
           text="HTML"

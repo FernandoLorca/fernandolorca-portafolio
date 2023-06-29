@@ -17,11 +17,11 @@ const Hero = () => {
     >
       <TitleSection text="Desarrollador full stack" />
       <div className="my-5">
-        <h1 className="text-6xl lg:text-8xl xl:w-3/4 leading-tight lg:leading-snug font-bold mb-5">
+        <h1 className="text-6xl lg:text-8xl leading-tight lg:leading-snug font-bold mb-5">
           <span className="highlight">Creando soluciones</span> <br />
           tecnológicas innovadoras
         </h1>
-        <p className="mb-10 lg:text-2xl lg:leading-snug xl:w-2/4">
+        <p className="mb-10 lg:text-2xl lg:leading-snug">
           Mi nombre es Fernando Lorca, un comprometido desarrollador Full Stack
           dedicado a convertir ideas en soluciones digitales tangibles. Con una
           sólida experiencia en diversas tecnologías, mi objetivo es crear
@@ -31,7 +31,7 @@ const Hero = () => {
       </div>
       <Button
         text="Descubre mis proyectos"
-        link="https://google.com"
+        link="#projects"
       />
       <div className="h-64 flex items-center">
         <div className="w-3/4 horizontalBars bg-white"></div>
