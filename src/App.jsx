@@ -32,7 +32,7 @@ function App() {
           <ContactForm />
           <div className="mt-10">
             <img
-              src="/bg-footer.png"
+              src="/bg-footer.webp"
               alt=""
               className="w-full"
             />

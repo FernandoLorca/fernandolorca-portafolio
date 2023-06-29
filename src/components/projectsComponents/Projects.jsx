@@ -11,37 +11,37 @@ const Projects = () => {
       <div className="lg:grid lg:grid-cols-2">
         <Project
           title="Google clone - Vanilla javascript"
-          imgDesktop="projects/googleClone-desktop.png"
+          imgDesktop="projects/googleclone-desktop.webp"
         />
         <Project
           title="Rating component - Vanilla javascript"
-          imgDesktop="projects/ratingComponent-desktop.png"
-          imgMobile="projects/ratingComponent-mobile.png"
+          imgDesktop="projects/ratingcomponent-desktop.webp"
+          imgMobile="projects/ratingcomponent-mobile.webp"
         />
         <Project
           title="Space traveling agency - ReactJs"
-          imgDesktop="projects/space-desktop.png"
-          imgMobile="projects/space-mobile.png"
+          imgDesktop="projects/space-desktop-min.webp"
+          imgMobile="projects/space-mobile.webp"
         />
         <Project
           title="Pomodoro app - ReactJs"
-          imgDesktop="projects/pomodoro-desktop.png"
-          imgMobile="projects/pomodoro-mobile.png"
+          imgDesktop="projects/pomodoro-desktop.webp"
+          imgMobile="projects/pomodoro-mobile.webp"
         />
         <Project
           title="Age calculator app - ReactJs"
-          imgDesktop="projects/ageCalculator-desktop.png"
-          imgMobile="projects/ageCalculator-mobile.png"
+          imgDesktop="projects/agecalculator-desktop.webp"
+          imgMobile="projects/agecalculator-mobile.webp"
         />
         <Project
           title="NFT preview Component - Html y Css"
-          imgDesktop="projects/nftCard-desktop.png"
-          imgMobile="projects/nftCard-mobile.png"
+          imgDesktop="projects/nftcard-desktop.webp"
+          imgMobile="projects/nftcard-mobile.webp"
         />
         <Project
           title="Fernando Lorca Portafolio - ReactJs"
-          imgDesktop="projects/portafolio-desktop.png"
-          imgMobile="projects/portafolio-mobile.png"
+          imgDesktop="projects/portafolio-desktop.webp"
+          imgMobile="projects/portafolio-mobile.webp"
         />
       </div>
     </div>

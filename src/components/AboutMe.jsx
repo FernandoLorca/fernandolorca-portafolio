@@ -40,7 +40,7 @@ const AboutMe = () => {
           responsive="hidden lg:block"
         />
         <img
-          src="/florca.png"
+          src="/florca.webp"
           alt="Imagen de Fernando Lorca"
           className="relative z-20 w-2/4 lg:w-56 lg:h-56"
         />
