@@ -10,15 +10,6 @@ const Projects = () => {
       <TitleSection text="Projectos" />
       <div className="lg:grid lg:grid-cols-2">
         <Project
-          title="Google clone - Vanilla javascript"
-          imgDesktop="projects/googleclone-desktop.webp"
-        />
-        <Project
-          title="Rating component - Vanilla javascript"
-          imgDesktop="projects/ratingcomponent-desktop.webp"
-          imgMobile="projects/ratingcomponent-mobile.webp"
-        />
-        <Project
           title="Space traveling agency - ReactJs"
           imgDesktop="projects/space-desktop-min.webp"
           imgMobile="projects/space-mobile.webp"
@@ -27,6 +18,11 @@ const Projects = () => {
           title="Pomodoro app - ReactJs"
           imgDesktop="projects/pomodoro-desktop.webp"
           imgMobile="projects/pomodoro-mobile.webp"
+        />
+        <Project
+          title="Rating component - Vanilla javascript"
+          imgDesktop="projects/ratingcomponent-desktop.webp"
+          imgMobile="projects/ratingcomponent-mobile.webp"
         />
         <Project
           title="Age calculator app - ReactJs"
@@ -42,6 +38,10 @@ const Projects = () => {
           title="Fernando Lorca Portafolio - ReactJs"
           imgDesktop="projects/portafolio-desktop.webp"
           imgMobile="projects/portafolio-mobile.webp"
+        />
+        <Project
+          title="Google clone - Vanilla javascript"
+          imgDesktop="projects/googleclone-desktop.webp"
         />
       </div>
     </div>

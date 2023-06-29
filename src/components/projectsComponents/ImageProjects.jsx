@@ -11,7 +11,7 @@ const ImageProjects = ({ src }) => {
 };
 
 ImageProjects.propTypes = {
-  src: PropTypes.string.isRequired,
+  src: PropTypes.string,
 };
 
 export default ImageProjects;

@@ -9,11 +9,22 @@ const TabletNavbar = () => {
     >
       <LogoFernando />
       <ul className="flex gap-10 text-lg">
-        <TabletNavbarAnchor href="#inicio" text="Inicio" />
-        <TabletNavbarAnchor href="#aboutme" text="Sobre mí" />
-        <TabletNavbarAnchor href="#skills" text="Habilidades" />
-        <TabletNavbarAnchor href="#projects" text="Proyectos" />
-        <TabletNavbarAnchor href="#contact" text="Contacto" />
+        <TabletNavbarAnchor
+          href="#aboutme"
+          text="Sobre mí"
+        />
+        <TabletNavbarAnchor
+          href="#skills"
+          text="Habilidades"
+        />
+        <TabletNavbarAnchor
+          href="#projects"
+          text="Proyectos"
+        />
+        <TabletNavbarAnchor
+          href="#contact"
+          text="Contacto"
+        />
       </ul>
     </div>
   );

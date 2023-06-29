@@ -7,7 +7,10 @@ const LogoFernando = () => {
     <div
       className={`w-14 h-14 my-8 flex justify-center items-center ${openMobileMenu.appearNavbar}`}
     >
-      <img src="./logo.svg" alt="logo" />
+      <img
+        src="./logo.svg"
+        alt="logo"
+      />
     </div>
   );
 };

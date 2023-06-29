@@ -1,7 +1,7 @@
 import { useGlobalStateContext } from '../context/useGlobalStateContext';
 
 import TitleSection from './TitleSection';
-import FuntcionsDetails from './FunctionsDetails/FunctionsDetails';
+// import FuntcionsDetails from './FunctionsDetails/FunctionsDetails';
 
 const AboutMe = () => {
   const { opacity } = useGlobalStateContext();
@@ -15,7 +15,7 @@ const AboutMe = () => {
     >
       <TitleSection text="Conóce más sobre mí" />
       <div className="my-10">
-        <FuntcionsDetails
+        {/* <FuntcionsDetails
           positionLeft="left-44 -top-10"
           positionTop="left-24 top-4"
           rotate="-rotate-45"
@@ -38,11 +38,11 @@ const AboutMe = () => {
           textSize="text-lg"
           text="avatar(image, size, format);"
           responsive="hidden lg:block"
-        />
+        /> */}
         <img
           src="/florca.webp"
           alt="Imagen de Fernando Lorca"
-          className="relative z-20 w-2/4 lg:w-56 lg:h-56"
+          className="relative z-20 w-2/4 md:w-48 lg:w-56 lg:h-56"
         />
       </div>
       <p className="md:text-lg md:leading-relaxed">
