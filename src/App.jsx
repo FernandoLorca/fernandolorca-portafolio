@@ -4,6 +4,7 @@ import MobileNavbar from './components/mobileComponents/Navbar/MobileNavbar';
 import Hero from './components/Hero';
 import AboutMe from './components/AboutMe';
 import Habilities from './components/mobileComponents/HabilitiesComponent/Habilities';
+import Projects from './components/projectsComponents/Projects';
 import ContactForm from './components/mobileComponents/ContactForm/ContactForm';
 import MobileMenu from './components/mobileComponents/Navbar/MobileMenu';
 
@@ -20,6 +21,7 @@ function App() {
           <Hero />
           <AboutMe />
           <Habilities />
+          <Projects />
           <div className="flex justify-center items-center py-8">
             <img
               src="/logo-florca.svg"
