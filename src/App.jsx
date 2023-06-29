@@ -13,8 +13,8 @@ import GoTop from './components/GoTop';
 function App() {
   return (
     <>
-      <GoTop />
       <GlobalStateProvider>
+        <GoTop />
         <div className="bg01">
           <div className="bg02">
             <MobileMenu />
@@ -36,7 +36,7 @@ function App() {
               <img
                 src="/bg-footer.webp"
                 alt=""
-                className="w-full"
+                className="w-full opacity-40"
               />
             </div>
           </div>

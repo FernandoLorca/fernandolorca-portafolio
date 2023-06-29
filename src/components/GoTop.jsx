@@ -25,7 +25,7 @@ const GoTop = () => {
   return (
     <a
       href="#"
-      className={`h-12 w-12 backgroundGradient text-white text-2xl flex justify-center items-center rounded-full fixed bottom-5 right-5 cursor-pointer ${
+      className={`h-12 w-12 backgroundGradient text-white text-2xl flex justify-center items-center rounded-full fixed bottom-5 right-5 cursor-pointer z-10 ${
         visible ? 'fixed' : 'hidden'
       }`}
       onClick={scrollToTop}
