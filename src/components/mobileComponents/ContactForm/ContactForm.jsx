@@ -1,4 +1,4 @@
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 import { useState, useRef } from 'react';
 import { useGlobalStateContext } from '../../../context/useGlobalStateContext';
@@ -17,6 +17,8 @@ const ContactForm = () => {
   const [labelName, setLabelName] = useState(false);
   const [labelEmail, setLabelEmail] = useState(false);
   const [labelTextarea, setLabelTextarea] = useState(false);
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
   const form = useRef();
 
   const handleLabelNameFocus = () => setLabelName(true);
@@ -49,23 +51,40 @@ const ContactForm = () => {
   const sendEmail = e => {
     e.preventDefault();
 
-    console.log(e.target[0].value);
+    if (
+      e.target[0].value === '' ||
+      e.target[1].value === '' ||
+      e.target[2].value === ''
+    ) {
+      return setError('Todos los campos son obligatorios');
+    } else {
+      setError('');
+    }
 
-    // emailjs
-    //   .sendForm(
-    //     'service_r93p53r',
-    //     'template_ejemplo',
-    //     form.current,
-    //     'o7GLP__RAarSPldH-'
-    //   )
-    //   .then(
-    //     result => {
-    //       console.log(result);
-    //     },
-    //     error => {
-    //       console.log(error);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        'service_r93p53r',
+        'template_ejemplo',
+        form.current,
+        'o7GLP__RAarSPldH-'
+      )
+      .then(
+        result => {
+          console.log(result);
+          if (result.status === 200) {
+            setSuccess('Se ha enviado el mensaje con éxito');
+            setInputValues({
+              nameValue: '',
+              emailValue: '',
+              textareaValue: '',
+            });
+          }
+        },
+        error => {
+          console.log(error);
+          setError('Hubo un problema al enviar el mensaje');
+        }
+      );
   };
 
   return (
@@ -113,11 +132,11 @@ const ContactForm = () => {
             <input
               className="border-b h-10 border-white bg-white bg-opacity-0 w-full mb-5 relative z-20 focus:outline-none focus:border-b-2 focus:border-fucsia-500 transition-colors duration-300"
               type="text"
-              name="user_name"
+              name="user_email"
               onFocus={handleLabelEmailFocus}
               onBlur={handleLabelEmailBlur}
               onChange={handleInputsValuesChanges.handleEmailValueChange}
-              value={inputValues.nameValue}
+              value={inputValues.emailValue}
             />
           </div>
           <div>
@@ -141,6 +160,8 @@ const ContactForm = () => {
               value={inputValues.textareaValue}
             />
           </div>
+          <p className="text-red-300">{error}</p>
+          <p className="text-green-300">{success}</p>
           <button
             type="submit"
             className="px-8 py-3 mt-5 rounded-full lg:text-xl bg-gradient-to-tl from-rose-600 to-orange-300"
