@@ -5,7 +5,7 @@ import { BsGlobe } from 'react-icons/bs';
 import ImageProjects from './ImageProjects';
 import ButtonProjects from './ButtonProjects';
 
-const Project = ({ title, imgDesktop, imgMobile }) => {
+const Project = ({ title, imgDesktop, imgMobile, linkRepo, linkSite }) => {
   return (
     <div className="py-10">
       <h3 className="pb-10 text-xl text-center md:text-start">{title}</h3>
@@ -19,14 +19,14 @@ const Project = ({ title, imgDesktop, imgMobile }) => {
       </div>
       <div className="flex justify-center md:justify-start gap-5 mt-10">
         <ButtonProjects
-          text="Ver repositorio"
+          text="Repositorio"
           icon={<DiGithubAlt className="text-2xl" />}
-          link="https://google.com"
+          link={linkRepo}
         />
         <ButtonProjects
-          text="Ver sitio"
+          text="Sitio"
           icon={<BsGlobe className="text-xl" />}
-          link="https://google.com"
+          link={linkSite}
         />
       </div>
     </div>
@@ -37,6 +37,8 @@ Project.propTypes = {
   title: PropTypes.string.isRequired,
   imgDesktop: PropTypes.string.isRequired,
   imgMobile: PropTypes.string,
+  linkRepo: PropTypes.string.isRequired,
+  linkSite: PropTypes.string.isRequired,
 };
 
 export default Project;
